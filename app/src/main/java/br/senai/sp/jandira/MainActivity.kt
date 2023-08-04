@@ -53,7 +53,12 @@ class MainActivity : ComponentActivity() {
             composable(route =  "login"){ LoginScreen(navController)}
             composable(route =  "menu"){ MenuScreen(navController) }
             composable(route =  "pedidos"){ PedidoScreen(navController) }
-            composable(route =  "perfil"){ PerfilScreen(navController) }
+            composable(route =  "perfil/{nomeUsuario}/{idade}"){
+                var nome = it.arguments!!.getString("nomeUsuario")
+                var idade = it.arguments!!.getString("idade")
+
+                PerfilScreen(navController,nome!!, idade!!)
+            }
         }
                 }
             }

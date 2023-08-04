@@ -30,7 +30,7 @@ fun MenuScreen(navController: NavController) {
 
             ) {
 
-                Button(onClick = { navController.navigate("perfil")}) {
+                Button(onClick = { navController.navigate("perfil/Maria Silva/25")}) {
                     Text(text = "PERFIL")
                 }
 
