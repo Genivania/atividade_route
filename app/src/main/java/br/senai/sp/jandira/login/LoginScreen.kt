@@ -38,7 +38,9 @@ fun LoginScreen(navController: NavController) {
 
 
            ) {
-               Button(onClick = { navController.navigate("menu")}) {
+               Button(
+                   onClick = { navController.navigate("menu")}
+               ) {
                    Text(text = "ENTRAR")
                }
            }

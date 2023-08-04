@@ -63,4 +63,7 @@ dependencies {
 
     //Biblioteca de navegaçao
     implementation "androidx.navigation:navigation-compose:2.6.0"
+
+    //Biblioteca para efeitos de animação na transiçao
+    implementation "com.google.accompanist:accompanist-navigation-animation:0.30.1"
 }
